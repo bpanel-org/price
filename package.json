@@ -1,6 +1,6 @@
 {
   "name": "@bpanel/price",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fetch BTC-fiat exchange rate and add to app store.",
   "main": "dist/index.js",
   "scripts": {
@@ -41,8 +41,8 @@
     "prettier": "^1.11.1"
   },
   "peerDependencies": {
-    "@bpanel/bpanel-ui": "*",
-    "@bpanel/bpanel-utils": "*",
+    "@bpanel/bpanel-ui": "^0.0.16",
+    "@bpanel/bpanel-utils": "^0.1.4",
     "react": "^16.3.0"
   }
 }
