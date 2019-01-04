@@ -28,4 +28,12 @@ state.plugins.price = {
 
 Additional APIs can be added in `lib/feeds.js`, template and details are in the comments.
 
-Price data can be displayed and modified from other plugins, such as the simple footer widget [price-widget](https://github.com/bpanel-org/price-widget). On its own, this plugin will ONLY fetch the price on application load, and whenever `SET_CURRENT_CLIENT` is dispatched. Otherwise it requires an additional plugin (like the footer widget) to dispatch `REFRESH_PRICE`.
+Price data can be displayed and modified from other plugins, such as the simple footer widget [price-widget](https://github.com/bpanel-org/price-widget). On its own, this plugin will ONLY fetch the price on application load, and whenever `STATE_REFRESHED` is dispatched. Otherwise it requires an additional plugin (like the footer widget) to dispatch `REFRESH_PRICE`.
+
+**Important:** This plug in currently requires the bPanel backend plugin `@bpanel/curl` to be installed separately by the user:
+
+Using [bpanel-cli](https://github.com/bpanel-org/bpanel-cli)
+
+```bash
+$ bpanel-cli i @bpanel/curl
+```
