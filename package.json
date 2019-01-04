@@ -26,8 +26,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "bcurl": "pinheadmz/bcurl#bpanel-dev",
-    "@bpanel/curl": "^0.0.1"
+    "bcurl": "pinheadmz/bcurl#bpanel-dev"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -44,6 +43,7 @@
     "prettier": "^1.11.1"
   },
   "peerDependencies": {
+    "@bpanel/curl": "^0.0.1",
     "@bpanel/bpanel-ui": "^0.0.16",
     "@bpanel/bpanel-utils": "^0.1.4",
     "react": "^16.3.0"
